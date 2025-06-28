@@ -1,15 +1,20 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
-.ipynb_checkpoints/
+*.pyo
+*.pyd
+.Python
+*.egg-info/
 
 # Virtual environment
+env/
 venv/
 
 # Data files
 data/
+*.csv
 
 # IDE specific files
 .vscode/
@@ -21,3 +26,10 @@ data/
 # Environment files
 .env
 .env.local
+
+# MLflow
+mlruns/
+*.db
+
+# Docker
+*.log

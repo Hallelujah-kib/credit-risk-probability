@@ -6,8 +6,8 @@ This repository implements a credit risk model for Bati Bank's "buy-now-pay-late
 ## Setup Instructions
 1. Clone the repository: `git clone <repo-url>`
 2. Install dependencies: `pip install -r requirements.txt`
-3. Download the dataset from [Zindi](https://zindi.africa/competitions/xente-fraud-detection-challenge) and place `TrainingData.csv` in `data/`.
-4. Run the EDA notebook: `jupyter notebook notebooks/EDA.ipynb`
+3. Download the dataset from [Zindi](https://zindi.africa/competitions/xente-fraud-detection-challenge) and place `TrainingData.csv` in `data/raw/`.
+4. Run the EDA notebook: `jupyter notebook notebooks/1.0-eda.ipynb`
 5. For future scripts, run: `python src/data_processing.py`
 
 ## Directory Structure
@@ -15,7 +15,7 @@ This repository implements a credit risk model for Bati Bank's "buy-now-pay-late
 - `notebooks/`: `EDA.ipynb` for exploratory analysis.
 - `src/`: Modular Python scripts for data processing (`data_processing.py`), modeling (`train.py`), and inference (`predict.py`).
 - `tests/`: Unit tests (`test_data_processing.py`).
-- `api/`: FastAPI application (`main.py`, `pydantic_models.py`).
+- `src/api/`: FastAPI application (`main.py`, `pydantic_models.py`).
 - `reports/`: Interim (`interim_report.md`) and final reports.
 - Root: `README.md`, `requirements.txt`, `.gitignore`, `Dockerfile`, `docker-compose.yml`, `.github/workflows/ci.yml`.
 
